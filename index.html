@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Precise Augmentation and Counting of Helicobacter Pylori in Histology Image</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Precise Augmentation and Counting of Helicobacter Pylori in Histology Image" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				manualControls: '#slider3-pager',
+			});
+		});
+	</script>
+	<!---- start-smoth-scrolling---->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+			});
+		});
+	</script>
+	<!---End-smoth-scrolling---->
+	<link href="css/pace-theme.css" rel="stylesheet" />
+	<script src="js/pace.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="logo">
+					<a href="index.html">
+						<h1>Precise Augmentation and Counting of <br /> Helicobacter Pylori in Histology Image </h1>
+					</a>
+				</div>
+				<div style="text-align: center;">
+					<a href="#">Yufei Cui</a>,
+					<a href="#">Yixin Chen</a>,
+					<a href="#">Zhifeng Shuai</a>,
+					<!-- <a href="#">Yuan Yuan</a> -->
+				</div>
+			</div>
+		</div>
+		<!-- <div class="slider">
+		
+			<ul class="rslides" id="slider">
+				<li><img src="images/hp/1.png" alt="">
+				</li>
+				<li><img src="images/hp/2.png" alt="">
+				</li>
+				<li><img src="images/hp/3.png" alt="">
+				</li>
+			</ul>
+		
+			<ul id="slider3-pager">
+				<li><a href="#"><img src="images/hp/1-1.png" alt=""></a></li>
+				<li><a href="#"><img src="images/hp/2-1.png" alt=""></a></li>
+				<li><a href="#"><img src="images/hp/3-1.png" alt=""></a></li>
+			</ul>
+		</div> -->
+		<div class="content">
+			<div class="raceing-section">
+				<div class="container">
+					<h3>HPCDataset</h3>
+					<div class="about-grids">
+						<p style="text-align:justify">
+							We present a large-scale HP counting corpus HPCDataset. To the best of our knowledge, it is
+							the first such corpus. HPCDataset comes from three data types: 1) Real data; 2) Synthetic
+							data(HP-positive) and 3) Synthetic data(HP-negative).
+						</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="about-grids">
+						<strong>Real Data</strong>
+						<p></p>
+						<p style="text-align:justify">
+							HPCDataset was built based on the data acquired at the . We collected H&E WSI of 49 gastric
+							biopsies(38 H. pylori-positive and 11 H. pylori-negative biopsies) from 57 patients and each
+							WSI was subdivided into non-overlapping image patches of size 1024 X 1024 pixels. We invited
+							pathologists to extract and annotate the H. pylori from the provided images. After that, a
+							total of 859 H. pylori-positive patches was annotated.
+						</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="gallery-bottom">
+						<div class="section group">
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/real/43.png" data-fancybox-group="gallery"><img
+										src="images/real/43.png" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/real/68.png" data-fancybox-group="gallery"><img
+										src="images/real/68.png" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/real/87.png" data-fancybox-group="gallery"><img
+										src="images/real/87.png" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/real/94.png" data-fancybox-group="gallery"><img
+										src="images/real/94.png" class="img-style row6" alt=""><span> </span></a>
+							</div>
+						</div>
+						<p style="text-align: center;"><strong>Figure 1.</strong> The exemplars of original images
+							from the proposed HPCDataset.</p>
+
+						<div class="about-grids">
+							<strong>Synthetic Data(HP-positive)</strong>
+							<p style="text-align:justify">
+								We predict a series of plausible locations according to the experiment of pathology experts, which H. pylori are usually locate at the mucosa and epithelium of gastric tissues. Then the generated H. pylori are placed on the original H. pylori-positive images.
+							</p>
+							<div class="clearfix"></div>
+						</div>
+						<div class="section group">
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/abnormal/3_40.png" data-fancybox-group="gallery"
+									title="Lorem ipsum dolor sit amet"><img src="images/abnormal/3_40.png"
+										class="img-style row6" alt=""><span>
+									</span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/abnormal/6_70.png" data-fancybox-group="gallery"><img
+										src="images/abnormal/6_70.png" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/abnormal/9_40.png" data-fancybox-group="gallery"><img
+										src="images/abnormal/9_40.png" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/abnormal/61_35.png" data-fancybox-group="gallery"><img
+										src="images/abnormal/61_35.png" class="img-style row6" alt=""><span> </span></a>
+							</div>
+						</div>
+						<p style="text-align: center;"><strong>Figure 1.</strong> The exemplars of synthetic crowd
+							scenes from the proposed GCC dataset.</p>
+
+						<div class="about-grids">
+							<strong>Synthetic Data(HP-negative)</strong>
+							<p></p>
+							<p style="text-align:justify">
+								The generated H. pylori are randomly placed on the light background of the H. pylori-negative images.
+							</p>
+							<div class="clearfix"></div>
+						</div>
+						<div class="section group">
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/normal/37.png" data-fancybox-group="gallery"
+									title="Lorem ipsum dolor sit amet"><img src="images/normal/37.png"
+										class="img-style row6" alt=""><span>
+									</span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/normal/54.png" data-fancybox-group="gallery"><img
+										src="images/normal/54.png" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/normal/80.png" data-fancybox-group="gallery"><img
+										src="images/normal//80.png" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images/normal/85.png" data-fancybox-group="gallery"><img
+										src="images/normal/85.png" class="img-style row6" alt=""><span> </span></a>
+							</div>
+						</div>
+						<p style="text-align: center;"><strong>Figure 1.</strong> The exemplars of synthetic crowd
+							scenes from the proposed GCC dataset.</p>
+					</div>
+					<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+					<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+					<script type="text/javascript">
+						$(document).ready(function () {
+							$('.fancybox').fancybox();
+						});
+					</script>
+					<div class="about-grids">
+						<p style="text-align:justify">
+							Table 1 shows the basic information of GCC and the existing datasets. In addition to the
+							above
+							advantages,
+							GCC is more diverse than other real-world datasets.
+						</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="about-grids">
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th rowspan="2">Training Data</th>
+										<th rowspan="2">Number of Images</th>
+										<th rowspan="2">Average Resolution</th>
+										<th colspan="4">Count Statistics</th>
+									</tr>
+									<tr>
+										<th>Min</th>
+										<th>Age</th>
+										<th>Max</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Real data</td>
+										<td>659</td>
+										<td>1024 &times; 1024</td>
+										<td>1</td>
+										<td>37</td>
+										<td>532</td>
+									</tr>
+									<tr>
+										<td>Synthetic(HP-positive)</td>
+										<td>1,517</td>
+										<td>1024 &times; 1024</td>
+										<td>4</td>
+										<td>78</td>
+										<td>632</td>
+									</tr>
+									<tr>
+										<td>Synthetic(HP-negative)</td>
+										<td>3,400</td>
+										<td>1024 &times; 1024</td>
+										<td>5</td>
+										<td>44</td>
+										<td>295</td>
+									</tr>
+									<tr>
+										<td>Real + Synthetic</td>
+										<td>2,176</td>
+										<td>1024 &times; 1024</td>
+										<td>1</td>
+										<td>65</td>
+										<td>632</td>
+									</tr>
+								</tbody>
+							</table>
+							<p style='vertical-align: middle;text-align: center;'><strong>Table 1.</strong> Statistics
+								of the real data and synthetic data.</p>
+							<script type="text/javascript">
+								var ths = $('.about-grids th');
+								var putcenter = 'vertical-align: middle;text-align: center;';
+								for (var i = 0; i < ths.length; i++) {
+									ths[i].style = putcenter;
+								}
+								var tds = $('.about-grids td');
+								for (var i = 0; i < tds.length; i++) {
+									tds[i].style = putcenter;
+								}
+							</script>
+						</div>
+						<div class="col-md-2"></div>
+
+					</div>
+				</div>
+			</div>
+			<div class="about-section">
+				<div class="container">
+					<h3>Precise Augmentation and Counting of Helicobacter Pylori in Histology Image</h3>
+					<div class="about-grids">
+						<div class="col-md-5 about-grid">
+							<img src="images/framework/framework_00.png" class="img-responsive" alt="/">
+							<!-- <h4>Supervised Crowd Counting</h4>
+							<p style="text-align:justify">We present a pretrained scheme to prompt the original method's
+								performance on the real data, which effectively reduces the estimation errors compared
+								with random initialization and ImageNet model, respectively. Further, through the
+								strategy, our proposed SFCN achieves the state-of-the-art results.</p> -->
+						</div>
+						<div class="col-md-7 about-grid">
+							<!-- <img src="images/framework/framework_00.png" class="img-responsive" alt="/"> -->
+							<!-- <h4>Precise Augmentation and Counting of Helicobacter Pylori in Histology Image</h4> -->
+							<p style="text-align:justify">We study the precise counting of Helicobacter Pylori (HP),
+								which is important for diagnosis of gastric cancer. The crowd counting technique is
+								adapted for a precise quantitative analysis. The challenge of training an HP counting
+								model lies in scarcity of labels. We use a DCGAN for the generative modelling of HP
+								morphology and perform high-fidelity data augmentation. The comparative results show our
+								method outperforms the object detection and semantic segmentation baselines. The
+								proposed framework is potential useful in quantitative analysis of other bacteria in
+								histology images.</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="blog-section">
+				<div class="container">
+					<h3>Download Place</h3>
+					<div class="blog-grids">
+						<div class="col-md-3 blog-grid" id='paper' style="cursor:pointer;">
+							<a href="https://arxiv.org/abs/1903.03303">
+								<img src="images/paper.jpg" class="img-responsive" alt="/">
+								<h4>Paper</h4>
+							</a>
+						</div>
+						<div class="col-md-3 blog-grid" id='dataset' style="cursor:pointer;">
+							<a href="https://drive.google.com/drive/folders/1f6cNEdAlltVXENQtn7DAaDrVOBW2xvrQ?usp=share_link">
+								<img src="images/data.jpg" class="img-responsive" alt="/">
+								<h4>GCC Dataset</h4>
+							</a>
+						</div>
+						<div class="col-md-3 blog-grid" id='code' style="cursor:pointer;">
+							<a
+								href="https://github.com/gjy3035/GCC-CL">
+								<img src="images/code.jpg" class="img-responsive" alt="/">
+								<h4>GCC-CL</h4>
+							</a>
+						</div>
+						<div class="col-md-3 blog-grid" id='model' style="cursor:pointer;">
+							<a href="https://github.com/gjy3035/GCC-SFCN">
+								<img src="images/model.jpg" class="img-responsive" alt="/">
+								<h4>spatial FCN</h4>
+							</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div> -->
+			<div class="service-section">
+				<div class="container">
+					<h3>Bibtex</h3>
+					<div class="service-grids">
+						<div class="col-md-12 service-grid">
+							<h4>Please cite the following paper if you use our work.</h4>
+							<br />
+							<pre>
+@inproceedings{neuripsmed2022,
+    title={Precise Augmentation and Counting of Helicobacter Pylori in Histology Image},
+    author={xx},
+    booktitle={Proceedings of IEEE Conference on Neural Information Processing Systems (NeurIPS)},
+    pages={x-x},
+    year={2022}
+}	</pre>
+							<div class="clearfix"></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-section">
+				<div class="container">
+					<div class="footer-top"></div>
+					<div class="footer-bottom">
+						<p>Copyright &copy; 2022. Center for xxx</p>
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function () {
+							$().UItoTop({ easingType: 'easeOutQuart' });
+						});
+					</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;">
+						</span></a>
+				</div>
+			</div>
+
+</body>
+
+</html>
