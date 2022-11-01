@@ -54,32 +54,42 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div class="slider">
+		<div class="slider">
 		
 			<ul class="rslides" id="slider">
-				<li><img src="images/hp/1.png" alt="">
+				<li><img src="images/hp/43.png" alt="">
 				</li>
-				<li><img src="images/hp/2.png" alt="">
+				<li><img src="images/density/43-1.png" alt="">
 				</li>
-				<li><img src="images/hp/3.png" alt="">
+				<li><img src="images/hp/68.png" alt="">
+				</li>
+				<li><img src="images/density/68-1.png" alt="">
+				</li>
+				<li><img src="images/hp/87.png" alt="">
+				</li>
+				<li><img src="images/density/87-1.png" alt="">
 				</li>
 			</ul>
 		
 			<ul id="slider3-pager">
-				<li><a href="#"><img src="images/hp/1-1.png" alt=""></a></li>
-				<li><a href="#"><img src="images/hp/2-1.png" alt=""></a></li>
-				<li><a href="#"><img src="images/hp/3-1.png" alt=""></a></li>
+				<li><a href="#"><img src="images/hp/43-1.png" alt=""></a></li>
+				<li><a href="#"><img src="images/density/43-2.png" alt=""></a></li>
+				<li><a href="#"><img src="images/hp/68-1.png" alt=""></a></li>
+				<li><a href="#"><img src="images/density/68-2.png" alt=""></a></li>
+				<li><a href="#"><img src="images/hp/87-1.png" alt=""></a></li>
+				<li><a href="#"><img src="images/density/87-2.png" alt=""></a></li>
 			</ul>
-		</div> -->
+		</div>
 		<div class="content">
 			<div class="raceing-section">
 				<div class="container">
-					<h3>HPCDataset</h3>
+					<h3 >HPCDataset</h3>
 					<div class="about-grids">
 						<p style="text-align:justify">
-							We present a large-scale HP counting corpus HPCDataset. To the best of our knowledge, it is
-							the first such corpus. HPCDataset comes from three data types: 1) Real data; 2) Synthetic
+							We present a large-scale HP counting corpus <a href="https://drive.google.com/drive/folders/1f6cNEdAlltVXENQtn7DAaDrVOBW2xvrQ?usp=sharing">HPCDataset</a>. To the best of our knowledge, it is
+							the first such corpus. HPCDataset was built based on the data acquired at the Affiliated Zhejiang Hospital, Zhejiang University School of Medicine, China.  HPCDataset comes from three data types: 1) Real data; 2) Synthetic
 							data(HP-positive) and 3) Synthetic data(HP-negative).
+							<!-- <a href="https://drive.google.com/drive/folders/1f6cNEdAlltVXENQtn7DAaDrVOBW2xvrQ?usp=sharing">HPCDataset</a> -->
 						</p>
 						<div class="clearfix"></div>
 					</div>
@@ -87,11 +97,7 @@
 						<strong>Real Data</strong>
 						<p></p>
 						<p style="text-align:justify">
-							HPCDataset was built based on the data acquired at the . We collected H&E WSI of 49 gastric
-							biopsies(38 H. pylori-positive and 11 H. pylori-negative biopsies) from 57 patients and each
-							WSI was subdivided into non-overlapping image patches of size 1024 X 1024 pixels. We invited
-							pathologists to extract and annotate the H. pylori from the provided images. After that, a
-							total of 859 H. pylori-positive patches was annotated.
+							 We collected H&E WSI of 49 gastric biopsies(38 H. pylori-positive and 11 H. pylori-negative biopsies) from 57 patients and each WSI was subdivided into non-overlapping image patches of size 1024 X 1024 pixels. We invited pathologists to extract and annotate the H. pylori from the provided images. After that, a total of 859 H. pylori-positive patches was annotated. 
 						</p>
 						<div class="clearfix"></div>
 					</div>
@@ -120,6 +126,7 @@
 						<div class="about-grids">
 							<strong>Synthetic Data(HP-positive)</strong>
 							<p style="text-align:justify">
+								In order to increase the dataset size, we used the proposed image augmentation to construct a synthetic H. Pylori counting dataset. The detailed statistics are reported in Table1. 
 								We predict a series of plausible locations according to the experiment of pathology experts, which H. pylori are usually locate at the mucosa and epithelium of gastric tissues. Then the generated H. pylori are placed on the original H. pylori-positive images.
 							</p>
 							<div class="clearfix"></div>
@@ -144,7 +151,7 @@
 										src="images/abnormal/61_35.png" class="img-style row6" alt=""><span> </span></a>
 							</div>
 						</div>
-						<p style="text-align: center;"><strong>Figure 1.</strong> The exemplars of synthetic(HP-positive) images
+						<p style="text-align: center;"><strong>Figure 2.</strong> The exemplars of synthetic(HP-positive) images
 							from the proposed HPCDataset.</p>
 
 						<div class="about-grids">
@@ -175,7 +182,7 @@
 										src="images/normal/85.png" class="img-style row6" alt=""><span> </span></a>
 							</div>
 						</div>
-						<p style="text-align: center;"><strong>Figure 1.</strong> The exemplars of synthetic(HP-negative) images
+						<p style="text-align: center;"><strong>Figure 3.</strong> The exemplars of synthetic(HP-negative) images
 							from the proposed HPCDataset.</p>
 					</div>
 					<script type="text/javascript" src="js/jquery.fancybox.js"></script>
@@ -187,10 +194,7 @@
 					</script>
 					<div class="about-grids">
 						<p style="text-align:justify">
-							Table 1 shows the basic information of GCC and the existing datasets. In addition to the
-							above
-							advantages,
-							GCC is more diverse than other real-world datasets.
+							Table 1 shows the basic information of HPCDataset. 
 						</p>
 						<div class="clearfix"></div>
 					</div>
